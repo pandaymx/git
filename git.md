@@ -58,19 +58,11 @@ alias ll='ls-al'
 
 
 
-### 2.1 获取本地仓库
-
-
-
 在需要使用git管理的数据中打开git bash窗口
 
 
 
 执行命令git init
-
-
-
-## 2.2 添加数据
 
 
 
@@ -82,3 +74,16 @@ alias ll='ls-al'
 
 
 
+中途可以使用git status来查看仓库的状态
+
+
+
+通过git log来查看提交记录
+
+
+
+通过git reset --hard commitID(通过git log来查看id)
+
+
+
+git reflog可以查看已经删除的提交记录
