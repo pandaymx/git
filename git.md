@@ -87,3 +87,14 @@ alias ll='ls-al'
 
 
 git reflog可以查看已经删除的提交记录
+
+
+
+## 三. 分支
+
+
+
+git branch 来新建分支
+
+
+
