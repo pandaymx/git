@@ -94,7 +94,117 @@ git reflog可以查看已经删除的提交记录
 
 
 
-git branch 来新建分支
+git branch :来查看分支
 
 
 
+git branch 分支名 :来新建分支
+
+
+
+git checkout 分支名:  切换分支
+
+
+
+git checkout -b 分支名 创建并切换分支 
+
+
+
+git merge 分支名称
+
+
+
+git branch -d b1 删除分支时需要检查
+
+
+
+git branch -D b1 不需要检查
+
+
+
+## 四. 开发中的原则和流程
+
+
+
+1. master分支
+2. develop分支
+3. featrue
+4. hotfix
+5. test
+6. pre
+
+
+
+## 五. git远程仓库
+
+
+
+配置公钥
+
+
+
+ssh-keygen -t rsa 生成
+
+
+
+然后输入y一路回车就可以了
+
+
+
+cat ~/.ssh/id_rsa.pub 复制到GitHub或者码云当中的ssh中
+
+
+
+git remote add origin 加仓库地址
+
+
+
+git remote 在使用这个语句
+
+
+
+git push origin 分支名
+
+
+
+如果远程分支名和本地分支名相同则可以致谢本地分支
+
+
+
+-f参数表示强势覆盖
+
+
+
+--set -upstream 推送到远程的同时建立起和分支之间的关系
+
+
+
+如果当前分支和远程分支关联，则可以省略分支名和远程名
+
+
+
+## 六. 远程操作
+
+
+
+git clone <仓库路径> [本地目录]
+
+
+
+本地目录可以省略
+
+
+
+git fetch [remote name] [branch name]
+
+
+
+将仓库中的更新都抓到本地，不会进行合并，如果不指定远端名称和分支名则抓取所有分支
+
+
+
+git pull
+
+
+
+自动进行合并
